@@ -2,12 +2,11 @@ module FontAssets
   class MimeTypes
     DEFAULT_TYPE = 'application/octet-stream'
     MIME_TYPES = {
-      '.eot' => 'application/vnd.ms-fontobject',
-      '.svg' => 'image/svg+xml',
-      '.ttf' => 'application/octet-stream',
-      '.otf' => 'application/font-sfnt',
-      '.woff' => 'application/x-font-woff',
-      '.woff2' => 'application/x-font-woff2'
+      '.eot' => Rack::Mime::MIME_TYPES['.eot'],
+      '.svg' => Rack::Mime::MIME_TYPES['.svg'],
+      '.ttf' => Rack::Mime::MIME_TYPES['.ttf'],
+      '.otf' => Rack::Mime::MIME_TYPES['.otf'],
+      '.woff' => Rack::Mime::MIME_TYPES['.woff']
     }
 
     def initialize(types, default = DEFAULT_TYPE.dup)
