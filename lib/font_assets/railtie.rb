@@ -8,7 +8,7 @@ module FontAssets
       config.font_assets.origin ||= "*"
       config.font_assets.options ||= { allow_ssl: true }
 
-      insert_target = if app.config.serve_static_files
+      insert_target = if app.config.serve_static_assets
         'ActionDispatch::Static'
       else
         'Rack::Runtime'
