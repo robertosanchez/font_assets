@@ -4,8 +4,8 @@ module FontAssets
     MIME_TYPES = {
       '.eot' => 'application/vnd.ms-fontobject',
       '.svg' => 'image/svg+xml',
-      '.ttf' => 'application/x-font-ttf',
-      '.otf' => 'application/x-font-otf',
+      '.ttf' => 'application/octet-stream',
+      '.otf' => 'application/font-sfnt',
       '.woff' => 'application/x-font-woff',
       '.woff2' => 'application/x-font-woff2'
     }
